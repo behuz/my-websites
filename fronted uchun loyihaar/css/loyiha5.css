@@ -1,0 +1,232 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    background: url(/images/castelmezzano.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 5s linear;
+    animation:bAnimation 100s linear infinite ;
+}
+
+.headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+.headers .logo h1{
+    font-family: Arial;
+    color: rgba(255,255,255);
+}
+
+.headers .lists ul{
+    list-style: none;
+}
+
+.headers .lists ul li{
+    display: inline;
+    margin: 0 15px;
+}
+.headers .lists ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.description{
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    font-family: sans-serif;
+}
+
+.description span{
+    color: orange;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.description h1{
+    font-size: 55px;
+}
+
+.description p{
+    max-width: 100%;
+    width: 500px;
+    line-height: 1.5;
+}
+
+.image_slider{
+    width: 430px;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-30%);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.image_container {
+    display: flex;
+    gap: 20px;
+    transition: all 4s linear;
+    animation: imagenime 100s linear infinite;
+}
+
+.image_container img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #fff;
+    border-radius: 10%;
+}
+
+@keyframes imagenime{
+    0%{
+        transform: translateX(0);
+    }
+    5%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    15%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-220px);
+    }
+    30%{
+        transform: translateX(-220px);
+    }
+    35%{
+        transform: translateX(-220px);
+    }
+    40%{
+        transform: translateX(-220px);
+    }
+    45%{
+        transform: translateX(-220px);
+    }
+    50%{
+        transform: translateX(-440px);
+    }
+    55%{
+        transform: translateX(-440px);
+    }
+    60%{
+        transform: translateX(-440px);
+    }
+    65%{
+        transform: translateX(-440px);
+    }
+    70%{
+        transform: translateX(-440px);
+    }
+    75%{
+        transform: translateX(-650px);
+    }
+    80%{
+        transform: translateX(-650px);
+    }
+    85%{
+        transform: translateX(-650px);
+    }
+    90%{
+        transform: translateX(-650px);
+    }
+    95%{
+        transform: translateX(-650px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes bAnimation{
+    0%{
+        background: url(/images/castelmezzano.jpg);
+    }5%{
+        background: url(/images/castelmezzano.jpg);
+    }
+    10%{
+        background: url(/images/castelmezzano.jpg);
+    }
+    15%{
+        background: url(/images/castelmezzano.jpg);
+    }
+    20%{
+        background: url(/images/castelmezzano.jpg);
+    }
+    25%{
+        background: url(/images/mountains-862870.jpg);
+    }   
+    30%{
+        background: url(/images/mountains-862870.jpg);
+    } 
+    35%{
+        background: url(/images/mountains-862870.jpg);
+    }
+    40%{
+        background: url(/images/mountains-862870.jpg);
+    }
+    45%{
+        background: url(/images/mountains-862870.jpg);
+    }
+    50%{
+        background: url(/images/iceland.jpg);
+    }
+    55%{
+        background: url(/images/iceland.jpg);
+    }
+    60%{
+        background: url(/images/iceland.jpg);
+    }
+    65%{
+        background: url(/images/iceland.jpg);
+    }
+    70%{
+        background: url(/images/iceland.jpg);
+    }
+    75%{
+        background: url(/images/snow-3193865.jpg);
+    }
+    80%{
+        background: url(/images/snow-3193865.jpg);
+    }
+    85%{
+        background: url(/images/snow-3193865.jpg);
+    }
+    90%{
+        background: url(/images/snow-3193865.jpg);
+    }
+    95%{
+        background: url(/images/snow-3193865.jpg);
+    }
+    100%{
+        background: url(/images/snow-3193865.jpg);
+    }
+}
